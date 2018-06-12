@@ -40,3 +40,7 @@ $GLOBALS['TL_MODELS']['tl_lead_export'] = \Terminal42\LeadsBundle\Model\LeadExpo
 // Cron jobs
 $GLOBALS['TL_CRON']['daily']['purgeLeads'] = array('Terminal42\LeadsBundle\EventListener\CronjobListener', 'onDaily');
 
+
+// Cron jobs
+$GLOBALS['TL_CRON']['daily']['purgeLeads'] = array('Terminal42\LeadsBundle\EventListener\CronjobListener', 'onDaily');
+

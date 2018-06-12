@@ -67,3 +67,11 @@ services:
             - '@Terminal42\LeadsBundle\Service\LeadsPurger'
         tags:
             - { name: console.command }
+
+    terminal42_leads.command.purge:
+        class: Terminal42\LeadsBundle\Command\PurgeCommand
+        arguments:
+            - "@contao.framework"
+            - "@database_connection"
+        tags:
+            - { name: console.command }
