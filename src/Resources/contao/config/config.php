@@ -42,5 +42,5 @@ $GLOBALS['TL_CRON']['daily']['purgeLeads'] = array('Terminal42\LeadsBundle\Event
 
 
 // Cron jobs
-$GLOBALS['TL_CRON']['daily']['purgeLeads'] = array('Terminal42\LeadsBundle\EventListener\CronjobListener', 'onDaily');
+$GLOBALS['TL_CRON']['daily']['purgeLeads'] = array('terminal42_leads.listener.cronjob', 'onDaily');
 
