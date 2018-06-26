@@ -202,7 +202,7 @@ class DataCollector
 
         $data = [];
         $db = \Database::getInstance()->prepare("
-            SELECT * FROM (
+            SELECT id, ANY_VALUE(name), ANY_VALUE(label), type, options, field_id, ANY_VALUE(master_id), ANY_VALUE(sorting) FROM (
                 SELECT
                     tl_lead_data.field_id AS id,
                     IFNULL(tl_form_field.name, tl_lead_data.name) AS name,
